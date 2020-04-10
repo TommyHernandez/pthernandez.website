@@ -1,11 +1,12 @@
 <template>
   <section class="container">
+    <span class="trick-or-treat"></span>
     <Nav />
     <div class="info-column">
       <div class="bg-img head">
         <img
           src="../src/assets/me.jpg"
-          alt="A Fantastic Pedro T. Hernández foto"
+          alt="A Fantastic photo of me"
           title="Just me ;)"
           class="avatar"
         />
@@ -18,10 +19,13 @@
             :strings="[
               'PHP',
               'Responsive Design',
+              'MySQL',
               'Javascript',
               'React',
+              'Redux',
               'Vue',
               'Nuxt',
+              'Vuex',
               'Web developer'
             ]"
             cursor-char="/"
@@ -69,10 +73,9 @@ export default {
 .info-column {
   grid-area: info-column;
   @media (min-width: 1180px) {
-    margin-left: 10%;
     border-right: 2px solid #333;
     border-left: 2px solid #333;
-    max-width: 550px;
+    max-width: 560px;
   }
 }
 .content-area {
@@ -100,14 +103,23 @@ footer {
   background: #fbfbfb;
   @media (min-width: 1180px) {
     grid-template-areas:
-      'info-column nav'
-      'info-column content'
-      'footer footer';
-    grid-template-columns: 35% auto;
+      'tot info-column nav'
+      'tot info-column content'
+      'footer footer footer';
+    grid-template-columns: 10% 35% auto;
     grid-template-rows: 60px auto 82px;
   }
   @media (min-width: 1800px) {
-    grid-template-columns: 550px auto;
+    grid-template-columns: 10% 550px auto;
+  }
+}
+.trick-or-treat {
+  grid-area: tot;
+  display: none;
+  @media (min-width: 1180px) {
+    display: block;
+    height: 60px;
+    background: #333;
   }
 }
 .title {
@@ -130,6 +142,9 @@ h2.title {
   height: 25vh;
   margin-bottom: 5em;
   border-bottom: 3px solid #cc6633;
+  @media (min-width: 1600px) {
+    height: 30vh;
+  }
 }
 .avatar {
   position: absolute;
@@ -141,7 +156,7 @@ h2.title {
   border-radius: 9em;
   object-fit: cover;
   transform: translatey(50%);
-  left: calc(50% - 4.5em);
+  left: calc(50% - 4.559em);
   transition: all 0.3s ease-in-out;
   border: 3px solid #cc6633;
   &:hover {

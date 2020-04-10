@@ -3,7 +3,7 @@
     <div class="wrapper">
       <nuxt-link to="/">Inicio</nuxt-link>
       <nuxt-link to="/about">Sobre mi</nuxt-link>
-      <nuxt-link to="/contact">Donde encontrarme</nuxt-link>
+      <nuxt-link to="/contact">Contactame</nuxt-link>
     </div>
   </nav>
 </template>
@@ -13,8 +13,11 @@ export default {}
 <style lang="scss">
 nav {
   grid-area: nav;
+  position: sticky;
+  top: 0px;
   background: #333;
   max-height: 60px;
+  z-index: 2;
   a {
     text-decoration: none;
     color: #fff;

@@ -9493,6 +9493,11 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
+vue-carousel-3d@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-0.2.0.tgz#5bd2afde5ad2f1c29a7387e1649ea796b6c1da37"
+  integrity sha512-soZChzi9l81pvK0xgXlfEO+E2Oc1Uj9UPAC/KOBLJHr2VPDQwwybP3CVwlOlDRBeZF/KGn0oEtjQ6YjtjHW2ew==
+
 vue-cli-plugin-vuetify@~2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-vuetify/-/vue-cli-plugin-vuetify-2.0.5.tgz#09ba78928653fc7e3801ea37e5120f957413dda4"
@@ -9609,11 +9614,6 @@ vue@^2.6.11:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
-
-vueperslides@^2.8.3:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/vueperslides/-/vueperslides-2.8.3.tgz#caa8f4985a9d7f7205cbc0b8f35727b98f7b8d42"
-  integrity sha512-CAJn+Xv25fp9/ygnhDZEb9iQfCty/HAX2geYV/ZpSzdIKqgx1AMJdVO94Nq7YS0E2vE+m8zuSrbfB/9wmNFrLA==
 
 vuex@^3.1.3:
   version "3.1.3"
