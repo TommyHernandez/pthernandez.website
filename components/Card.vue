@@ -67,7 +67,7 @@ export default {
 .resume {
   font-size: 0.9rem;
   text-align: justify;
-  min-height: 100px;
+  min-height: 120px;
 }
 .card-actions {
   min-height: 52px;

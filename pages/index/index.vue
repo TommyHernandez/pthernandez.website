@@ -6,7 +6,7 @@
       :space="450"
       :controls-visible="true"
       :display="3"
-      :height="452"
+      :height="470"
     >
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <Card v-bind="slide" />

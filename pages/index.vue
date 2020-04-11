@@ -67,9 +67,6 @@ export default {
 </script>
 
 <style lang="scss">
-* {
-  box-sizing: border-box;
-}
 .info-column {
   grid-area: info-column;
   @media (min-width: 1180px) {
@@ -92,6 +89,8 @@ footer {
 .container {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow: hidden;
   min-height: 100vh;
   display: grid;
   grid-template-areas:
@@ -181,9 +180,6 @@ h2.title {
       font-weight: 300;
       font-size: 1.2rem;
     }
-  }
-  p {
-    text-align: justify;
   }
 }
 .page-enter-active,
