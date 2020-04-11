@@ -6,7 +6,7 @@
       :space="450"
       :controls-visible="true"
       :display="3"
-      :height="444"
+      :height="452"
     >
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <Card v-bind="slide" />
@@ -31,7 +31,7 @@ export default {
           title: 'Best Secret UI Test',
           tech: 'React + CSSGrid',
           description:
-            'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0',
+            'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0.',
           urlDemo: 'http://uitest-react.pthernandez.es',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
           urlImg: ''
@@ -40,7 +40,7 @@ export default {
           title: 'Gema Abalos',
           tech: 'Wordpress',
           description:
-            'Web para una abogada de mi ciudad, esta web la desarrollé en conjunto a un amigo. El diseño del logo y los colores son obra de YuriRavenWest, que ademas de diseñador es un buen amigo. Este fue uno nuestros primeros proyectos y aun sigue en pie.',
+            'Esta web la desarrollé en conjunto con un amigo para una abogada de nuestra ciudad. El diseño del logo y los colores son obra de YuriRavenWest, que ademas de diseñador es un buen amigo. Este fue uno nuestros primeros proyectos y aun sigue en pie.',
           urlDemo: 'https://gemaabalosmunoz.com/',
           urlCode: '',
           urlImg: ''
