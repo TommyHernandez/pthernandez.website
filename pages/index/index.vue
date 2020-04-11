@@ -3,7 +3,7 @@
     <h2 class="title">Estos son algunos de mis trabajos</h2>
     <carousel-3d
       :perspective="0"
-      :space="400"
+      :space="450"
       :controls-visible="true"
       :display="3"
       :height="444"
@@ -31,7 +31,7 @@ export default {
           title: 'Best Secret UI Test',
           tech: 'React + CSSGrid',
           description:
-            'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News APIy uso SASS para el CSS, no uso ningun Framework CSS.',
+            'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0',
           urlDemo: 'http://uitest-react.pthernandez.es',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
           urlImg: ''
@@ -40,7 +40,7 @@ export default {
           title: 'Gema Abalos',
           tech: 'Wordpress',
           description:
-            'Web para una abogada de mi ciudad, esta web la desarrollé en conjunto a un amigo. El diseño del logo y los colores son obra de otro amigo. Este fue uno demis primeros proyectos y aun sigue en pié.',
+            'Web para una abogada de mi ciudad, esta web la desarrollé en conjunto a un amigo. El diseño del logo y los colores son obra de YuriRavenWest, que ademas de diseñador es un buen amigo. Este fue uno nuestros primeros proyectos y aun sigue en pie.',
           urlDemo: 'https://gemaabalosmunoz.com/',
           urlCode: '',
           urlImg: ''
@@ -49,7 +49,7 @@ export default {
           title: 'Crysmrnails',
           tech: 'Wordpress',
           description:
-            'Está ha sido hasta el momento la ultima web que he realizado en Wordpress. A diferencia de lade Gema en esta es el cliente el que lagestiona, quedando mi labor restringida al mantenimiento del servidor.',
+            'Está ha sido hasta el momento la ultima web que he realizado en Wordpress. A diferencia de la web de Gema en esta el cliente es quien lagestiona, quedando mi labor restringida al mantenimiento del servidor, dominio, HTTPS...',
           urlDemo: 'https://www.crysmrnails.es/',
           urlCode: '',
           urlImg: ''
@@ -103,5 +103,12 @@ export default {
   background-color: #fff;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+a.next,
+a.prev {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 </style>

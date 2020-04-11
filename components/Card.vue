@@ -16,10 +16,12 @@
       </div>
     </div>
     <div class="card-actions">
-      <a v-if="urlDemo" :href="urlDemo" class="btn">
+      <a v-if="urlDemo" :href="urlDemo" target="_blank" class="btn">
         Live Demo
       </a>
-      <a v-if="urlCode" :href="urlImg" class="btn">Ver el código</a>
+      <a v-if="urlCode" :href="urlCode" target="_blank" class="btn">
+        Ver el código</a
+      >
     </div>
   </div>
 </template>
