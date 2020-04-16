@@ -46,7 +46,9 @@
       <nuxt-child />
     </div>
     <footer>
-      <div class="">Made with <span id="heart"></span> in Granada</div>
+      <div class="">
+        Made with <img id="heart" src="../src/assets/heart.svg" /> in Granada
+      </div>
       <span class="cr">
         2020 Pthernandez
       </span>
@@ -67,12 +69,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/globals.scss';
 .info-column {
   grid-area: info-column;
   @media (min-width: 1180px) {
-    border-right: 2px solid #333;
-    border-left: 2px solid #333;
-    max-width: 560px;
+    border-right: 2px solid $grey;
+    border-left: 2px solid $grey;
   }
 }
 .content-area {
@@ -99,17 +101,17 @@ footer {
     'content'
     'footer';
   grid-template-rows: 60px auto auto 82px;
-  background: #fbfbfb;
+  background: $bgGrey;
   @media (min-width: 1180px) {
     grid-template-areas:
       'tot info-column nav'
       'tot info-column content'
       'footer footer footer';
-    grid-template-columns: 10% 35% auto;
+    grid-template-columns: 5% 400px auto;
     grid-template-rows: 60px auto 82px;
   }
   @media (min-width: 1800px) {
-    grid-template-columns: 10% 550px auto;
+    grid-template-columns: 2.5em 400px auto;
   }
 }
 .trick-or-treat {
@@ -118,15 +120,15 @@ footer {
   @media (min-width: 1180px) {
     display: block;
     height: 60px;
-    background: #333;
+    background: $grey;
   }
 }
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
-  font-weight: 300;
-  color: #35495e;
+  font-weight: bolder;
+  color: $black;
   letter-spacing: 1px;
 }
 h2.title {
@@ -140,7 +142,7 @@ h2.title {
   background-size: cover;
   height: 25vh;
   margin-bottom: 5em;
-  border-bottom: 3px solid #cc6633;
+  border-bottom: 4px solid $orangeB;
   @media (min-width: 1600px) {
     height: 30vh;
   }
@@ -157,22 +159,23 @@ h2.title {
   transform: translatey(50%);
   left: calc(50% - 4.559em);
   transition: all 0.3s ease-in-out;
-  border: 3px solid #cc6633;
+  border: 3px solid $baseOrange;
   &:hover {
     border-radius: 10px;
   }
 }
 .description {
   padding: 16px;
+  color: $black;
   h1 {
     font-size: 1.6rem;
   }
   .subtitle {
     display: flex;
-    color: #526488;
+    color: $baseOrange;
     word-spacing: 5px;
     padding-bottom: 15px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2rem;
     height: 41px;
     h2 {
@@ -192,35 +195,13 @@ h2.title {
 }
 footer {
   padding: 16px 16px;
-  background: #333;
+  background: $grey;
   text-align: center;
-  color: #fff;
+  color: $white;
   max-height: 82px;
 }
 /*Heart */
 #heart {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 26px;
-  vertical-align: middle;
-}
-#heart:before,
-#heart:after {
-  position: absolute;
-  content: '';
-  left: 16px;
-  top: 0;
-  width: 17px;
-  height: 26px;
-  background: #ff5252;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-#heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+  height: 22px;
 }
 </style>

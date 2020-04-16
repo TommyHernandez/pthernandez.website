@@ -1,20 +1,23 @@
 <template>
   <section class="contact">
     <h2 class="title">Puedes encontrarme</h2>
-    <p class="phrase">
+    <p class="contact__phrase">
       Estoy presente en todas estas redes. Contáctame si tienes una buena idea y
       crees que puedo ayudarte.
     </p>
-    <div class="network-links"></div>
-    <ul>
-      <li>
-        Github
-      </li>
-      <li>
-        LinkedIn
-      </li>
-      <li>Twitter</li>
-    </ul>
+    <div class="contact__network-links">
+      <ul>
+        <li>
+          <a href="https://github.com/TommyHernandez"> Github</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/pedrothdc/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/pedrothdc">Twitter</a>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 <script>
@@ -23,9 +26,29 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.phrase {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+@import '../../assets/globals.scss';
+.contact__phrase {
   font-size: 1.2em;
+}
+.contact__network-links {
+  max-width: 80%;
+  margin: 1.2em auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+      a {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $black;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          color: $orangeA;
+        }
+      }
+    }
+  }
 }
 </style>

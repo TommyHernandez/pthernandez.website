@@ -1,6 +1,10 @@
 <template>
   <div class="jobs">
     <h2 class="title">Estos son algunos de mis trabajos</h2>
+    <h3 class="subtitle">
+      Desarrollados durante mi tiempo coo freelancer, como pruebas técnicas o
+      simplemente como entretenimiento
+    </h3>
     <carousel-3d
       :perspective="0"
       :space="450"
@@ -17,6 +21,11 @@
 <script>
 import { Carousel3d, Slide } from 'vue-carousel-3d'
 import Card from '../../components/Card'
+import bsreact from '../../src/assets/bs-react.jpg'
+import bsvue from '../../src/assets/bs-vue.jpg'
+import wp from '../../src/assets/wordpress.jpg'
+import pixelarium from '../../src/assets/pixlarium.jpg'
+import pthdc from '../../src/assets/pth.jpg'
 export default {
   components: {
     Carousel3d,
@@ -29,12 +38,12 @@ export default {
       slides: [
         {
           title: 'Best Secret UI Test',
-          tech: 'React + CSSGrid',
+          tech: 'React + SASS(CSSGrid, Flexbox)',
           description:
             'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0.',
           urlDemo: 'http://uitest-react.pthernandez.es',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
-          urlImg: ''
+          urlImg: bsreact
         },
         {
           title: 'Gema Abalos',
@@ -43,7 +52,7 @@ export default {
             'Esta web la desarrollé en conjunto con un amigo para una abogada de nuestra ciudad. El diseño del logo y los colores son obra de YuriRavenWest, que ademas de diseñador es un buen amigo. Este fue uno nuestros primeros proyectos y aun sigue en pie.',
           urlDemo: 'https://gemaabalosmunoz.com/',
           urlCode: '',
-          urlImg: ''
+          urlImg: wp
         },
         {
           title: 'Crysmrnails',
@@ -52,16 +61,16 @@ export default {
             'Está ha sido hasta el momento la ultima web que he realizado en Wordpress. A diferencia de la web de Gema en esta el cliente es quien lagestiona, quedando mi labor restringida al mantenimiento del servidor, dominio, HTTPS...',
           urlDemo: 'https://www.crysmrnails.es/',
           urlCode: '',
-          urlImg: ''
+          urlImg: wp
         },
         {
           title: 'New Best Secret UI Test',
-          tech: 'Vue + CSSGrid',
+          tech: 'Vue + SASS(CSSGrid, Flexbox)',
           description:
             'Esta es una versión renovada del primer test que hice. Esta vez con un diseño más completo y bonito. Uso Vue, SASS para el CSS y la News API de Google. Como la ves anterior,nada de Frameworks CSS',
           urlDemo: 'http://uitest-vue.pthernandez.es',
           urlCode: '',
-          urlImg: ''
+          urlImg: bsvue
         },
         {
           title: 'Pixelarium Theme',
@@ -70,16 +79,16 @@ export default {
             'Esto es un template que desarrollé para Wordpress mientras estudiaba. Parte de la base de Bootstrap 3, fué un proyecto para aprender más que para otra cosa.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/pixelariumTheme',
-          urlImg: ''
+          urlImg: pixelarium
         },
         {
           title: 'Pthernandez.es',
-          tech: 'Nuxt + CSSgrid',
+          tech: 'Nuxt + SASS(CSSGrid, Flexbox)',
           description:
             'La web que visitas ahora mismo. Para esta web no he usado ningun Framework CSS. He decido usar Nuxt por qe dá una serie de ventajas frente a Vue solo, Nuxt me da la posibilidad de escalar la web.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/pthernandez.website',
-          urlImg: ''
+          urlImg: pthdc
         }
       ]
     }
@@ -87,11 +96,18 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '@/assets/globals.scss';
 .jobs {
   height: 100%;
   overflow: hidden;
   .title {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+  .subtitle {
+    color: $orangeA;
+    font-weight: 300;
+    margin-bottom: 1.2em;
   }
 }
 .carousel-3d-container {

@@ -19,11 +19,11 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#fbfbfb' },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['vue-material-design-icons/styles.css'],
   /*
    ** Plugins to load before mounting the App
    */
