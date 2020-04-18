@@ -1,3 +1,4 @@
+/* Color and General Vars */
 $baseOrange: #cc6633;
 $orange:#E34F2D;
 $red:#D9332B;
@@ -7,3 +8,26 @@ $white: #fff;
 $black: #0f0f0f;
 $grey:#333;
 $bgGrey:#fbfbfb;
+$fontFamily:'M PLUS Rounded 1c',
+sans-serif;
+
+/* Mixins */
+@mixin fontLight {
+  font-family: $fontFamily;
+  font-weight: 300;
+}
+
+@mixin fontRegular {
+  font-family: $fontFamily;
+  font-weight: 400;
+}
+
+@mixin fontBold {
+  font-family: $fontFamily;
+  font-weight: 700;
+}
+
+@mixin fontBlack {
+  font-family: $fontFamily;
+  font-weight: 900;
+}

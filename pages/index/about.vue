@@ -57,7 +57,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../../assets/globals.scss';
-
+.about__title {
+  @include fontBlack;
+}
 p {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
