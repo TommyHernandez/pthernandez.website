@@ -1,22 +1,27 @@
 <template>
   <div class="card">
-    <div class="img-container">
+    <div class="card__img-container">
       <img :src="urlImg" alt="project cover" />
     </div>
-    <div class="text-content">
-      <div class="card-title">{{ title }}</div>
-      <div class="card-subtitle">{{ tech }}</div>
+    <div class="card__text-content">
+      <div class="card__title">{{ title }}</div>
+      <div class="card__subtitle">{{ tech }}</div>
     </div>
-    <div class="text-content">
+    <div class="card__text-content">
       <div class="resume">
         {{ description }}
       </div>
     </div>
-    <div class="card-actions">
-      <a v-if="urlDemo" :href="urlDemo" target="_blank" class="btn">
+    <div class="card__actions">
+      <a v-if="urlDemo" :href="urlDemo" target="_blank" class="btn btn--filled">
         Live Demo
       </a>
-      <a v-if="urlCode" :href="urlCode" target="_blank" class="btn">
+      <a
+        v-if="urlCode"
+        :href="urlCode"
+        target="_blank"
+        class="btn btn--outline"
+      >
         Ver el código</a
       >
     </div>
@@ -45,21 +50,22 @@ export default {
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-bottom: none;
+  background: $white;
 }
-.img-container {
+.card__img-container {
   object-fit: cover;
 }
-.card-title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: bold;
+.card__title {
+  @include fontBold;
   font-size: 1.1em;
-  color: #0f0f0f;
+  color: $black;
 }
-.card-subtitle {
+.card__subtitle {
+  @include fontLight;
   font-size: 0.9rem;
+  color: $black;
 }
-.text-content {
+.card__text-content {
   padding: 16px 16px 0 16px;
 }
 .resume {
@@ -67,9 +73,11 @@ export default {
   text-align: justify;
   min-height: 120px;
 }
-.card-actions {
+.card__actions {
   min-height: 52px;
   padding: 16px 16px 8px 16px;
+  display: flex;
+  justify-content: space-between;
   a {
     text-decoration: none;
     text-align: center;
@@ -80,14 +88,13 @@ export default {
       line-height: 38px;
       padding: 0 8px;
       width: 150px;
-      background: $orangeA;
       color: $white;
       &:after {
         content: '';
         display: block;
         height: 6px;
         position: absolute;
-        background: $orangeB;
+        background: $baseOrange;
         bottom: 0px;
         left: 0px;
         width: 100%;
@@ -100,6 +107,14 @@ export default {
           transform-origin: bottom left;
           transform: scaleX(1);
         }
+      }
+      &.btn--filled {
+        background: $orangeB;
+      }
+      &.btn--outline {
+        border: 2px solid $orangeB;
+        color: $black;
+        line-height: 34px;
       }
     }
   }

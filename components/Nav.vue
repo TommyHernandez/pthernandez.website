@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="wrapper">
-      <nuxt-link to="/">Inicio</nuxt-link>
+      <nuxt-link to="/" exact>Inicio</nuxt-link>
       <nuxt-link to="/about">Sobre mi</nuxt-link>
       <nuxt-link to="/contact">Contactame</nuxt-link>
     </div>
@@ -21,12 +21,17 @@ nav {
   z-index: 2;
   border-bottom: 3px solid $orangeB;
   a {
+    @include fontLight;
     display: inline-block;
     text-decoration: none;
     color: #fff;
     transition: color 0.2s ease-in;
     &:hover {
       color: $orangeB;
+    }
+    &.nuxt-link-active {
+      @include fontBold;
+      color: $orangeA;
     }
     @media (min-width: 1436px) {
       margin-right: 32px;

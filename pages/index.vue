@@ -108,7 +108,7 @@ footer {
       'tot info-column content'
       'footer footer footer';
     grid-template-columns: 5% 400px auto;
-    grid-template-rows: 60px auto 82px;
+    grid-template-rows: 60px auto 90px;
   }
   @media (min-width: 1800px) {
     grid-template-columns: 2.5em 400px auto;
@@ -128,6 +128,12 @@ footer {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: bolder;
+  color: $black;
+  letter-spacing: 1px;
+}
+.sect-title {
+  @include fontBlack;
+  margin-bottom: 16px;
   color: $black;
   letter-spacing: 1px;
 }
@@ -198,10 +204,13 @@ footer {
   background: $grey;
   text-align: center;
   color: $white;
-  max-height: 82px;
+  > div {
+    padding-bottom: 8px;
+  }
 }
 /*Heart */
 #heart {
   height: 22px;
+  vertical-align: middle;
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
   <div class="jobs">
-    <h2 class="title">Estos son algunos de mis trabajos</h2>
+    <h2 class="jobs__title sect-title">Estos son algunos de mis trabajos</h2>
     <h3 class="subtitle">
-      Desarrollados durante mi tiempo coo freelancer, como pruebas técnicas o
-      simplemente como entretenimiento
+      Desarrollados durante mi tiempo como freelancer o pruebas técnicas de
+      empresas o simplemente como entretenimiento
     </h3>
     <carousel-3d
       :perspective="0"
-      :space="450"
+      :space="425"
       :controls-visible="true"
-      :display="3"
-      :height="470"
+      :display="slidesToShow"
+      :height="495"
     >
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <Card v-bind="slide" />
@@ -90,7 +90,14 @@ export default {
           urlCode: 'https://github.com/TommyHernandez/pthernandez.website',
           urlImg: pthdc
         }
-      ]
+      ],
+      slidesToShow: 3
+    }
+  },
+  mounted() {
+    const screenSize = window.outerWidth
+    if (screenSize > 1800) {
+      this.slidesToShow = 5
     }
   }
 }
@@ -100,10 +107,6 @@ export default {
 .jobs {
   height: 100%;
   overflow: hidden;
-  .title {
-    margin-bottom: 16px;
-    font-weight: 300;
-  }
   .subtitle {
     color: $orangeA;
     font-weight: 300;
@@ -119,6 +122,7 @@ export default {
   background-color: #fff;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 a.next,
 a.prev {

@@ -1,6 +1,6 @@
 <template>
   <section class="contact">
-    <h2 class="title">Puedes encontrarme</h2>
+    <h2 class="contact__title sect-title">Puedes encontrarme</h2>
     <p class="contact__phrase">
       Estoy presente en todas estas redes. Contáctame si tienes una buena idea y
       crees que puedo ayudarte.
