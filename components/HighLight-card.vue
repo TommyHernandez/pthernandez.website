@@ -49,4 +49,7 @@ export default {
   font-size: 1.3em;
   text-align: center;
 }
+.hl__description {
+  text-align: center;
+}
 </style>

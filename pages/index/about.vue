@@ -45,7 +45,15 @@
           prácticas.
         </p>
       </div>
-      <div class="about__skills"></div>
+      <div class="about__skills">
+        <div class="skills__tech" v-for="(tech, i) in technologies" :key="i">
+          <div class="skill__name">{{ tech.name }}</div>
+          <div class="skill__bg">
+            <span class="skill__bar" :style="{ width: tech.percent }"></span>
+            <span class="skill__percent">{{ tech.percent }}</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -64,6 +72,22 @@ export default {
     Fast,
     Intuitive,
     HighLightCard
+  },
+  data() {
+    return {
+      technologies: [
+        { name: 'HTML', percent: '90%' },
+        { name: 'CSS', percent: '90%' },
+        { name: 'Javascript', percent: '80%' },
+        { name: 'React', percent: '80%' },
+        { name: 'Vue', percent: '75%' },
+        { name: 'PHP', percent: '75%' },
+        { name: 'UI Design', percent: '60%' },
+        { name: 'SEO', percent: '70%' },
+        { name: 'UX Design', percent: '60%' },
+        { name: 'Java', percent: '65%' }
+      ]
+    }
   }
 }
 </script>
@@ -77,5 +101,54 @@ export default {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.about__content-area {
+  @media (min-width: 1436px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-column-gap: 1rem;
+  }
+}
+.about__bio {
+  padding-left: 16px;
+  margin-bottom: 1.5rem;
+}
+.about__skills {
+  padding: 0 1rem;
+}
+.skills__tech {
+  display: flex;
+  height: 28px;
+  margin-bottom: 1rem;
+}
+.skill__name {
+  display: block;
+  width: 106px;
+  padding: 0 8px;
+  border-right: 1px solid $white;
+  background: $orangeA;
+  line-height: 28px;
+  color: $white;
+  @include fontBold;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.skill__bg {
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skill__bar {
+  display: block;
+  width: 0px;
+  background: $orangeB;
+  transition: all 1s ease-in;
+}
+.skill__percent {
+  line-height: 28px;
+  padding: 0 8px;
+  color: $white;
 }
 </style>

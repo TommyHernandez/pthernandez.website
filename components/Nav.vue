@@ -1,9 +1,11 @@
 <template>
   <nav>
-    <div class="wrapper">
-      <nuxt-link to="/" exact>Inicio</nuxt-link>
-      <nuxt-link to="/about">Sobre mi</nuxt-link>
-      <nuxt-link to="/contact">Contactame</nuxt-link>
+    <div class="nav-container">
+      <div class="wrapper">
+        <nuxt-link to="/" exact>Inicio</nuxt-link>
+        <nuxt-link to="/about">Sobre mi</nuxt-link>
+        <nuxt-link to="/contact">Contactame</nuxt-link>
+      </div>
     </div>
   </nav>
 </template>
@@ -14,12 +16,9 @@ export default {}
 @import '@/assets/globals.scss';
 nav {
   grid-area: nav;
-  position: sticky;
-  top: 0px;
-  background: $grey;
+  position: relative;
   max-height: 60px;
   z-index: 2;
-  border-bottom: 3px solid $orangeB;
   a {
     @include fontLight;
     display: inline-block;
@@ -36,6 +35,14 @@ nav {
     @media (min-width: 1436px) {
       margin-right: 32px;
     }
+  }
+  .nav-container {
+    background: $grey;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    border-bottom: 3px solid $orangeB;
   }
   .wrapper {
     display: flex;
