@@ -1,7 +1,7 @@
 <template>
   <div class="jobs">
     <h2 class="jobs__title sect-title">Estos son algunos de mis trabajos</h2>
-    <h3 class="subtitle">
+    <h3 class="jobs__subtitle">
       Desarrollados durante mi tiempo como freelancer o pruebas técnicas de
       empresas o simplemente como entretenimiento
     </h3>
@@ -107,10 +107,14 @@ export default {
 .jobs {
   height: 100%;
   overflow: hidden;
-  .subtitle {
+  .jobs__subtitle {
     color: $orangeA;
     font-weight: 300;
     margin-bottom: 1.2em;
+    font-size: 0.9rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }
 .carousel-3d-container {

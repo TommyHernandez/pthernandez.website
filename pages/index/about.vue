@@ -46,7 +46,7 @@
         </p>
       </div>
       <div class="about__skills">
-        <div class="skills__tech" v-for="(tech, i) in technologies" :key="i">
+        <div v-for="(tech, i) in technologies" :key="i" class="skills__tech">
           <div class="skill__name">{{ tech.name }}</div>
           <div class="skill__bg">
             <span class="skill__bar" :style="{ width: tech.percent }"></span>
