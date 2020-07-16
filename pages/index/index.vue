@@ -41,18 +41,9 @@ export default {
           tech: 'React + SASS(CSSGrid, Flexbox)',
           description:
             'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0.',
-          urlDemo: 'http://uitest-react.pthernandez.es',
+          urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
           urlImg: bsreact
-        },
-        {
-          title: 'Gema Abalos',
-          tech: 'Wordpress',
-          description:
-            'Esta web la desarrollé en conjunto con un amigo para una abogada de nuestra ciudad. El diseño del logo y los colores son obra de YuriRavenWest, que ademas de diseñador es un buen amigo. Este fue uno nuestros primeros proyectos y aun sigue en pie.',
-          urlDemo: 'https://gemaabalosmunoz.com/',
-          urlCode: '',
-          urlImg: wp
         },
         {
           title: 'Crysmrnails',
@@ -69,7 +60,7 @@ export default {
           description:
             'Esta es una versión renovada del primer test que hice. Esta vez con un diseño más completo y bonito. Uso Vue, SASS para el CSS y la News API de Google. Como la ves anterior,nada de Frameworks CSS',
           urlDemo: 'http://uitest-vue.pthernandez.es',
-          urlCode: '',
+          urlCode: 'https://github.com/TommyHernandez/BSuiTest-vue',
           urlImg: bsvue
         },
         {
