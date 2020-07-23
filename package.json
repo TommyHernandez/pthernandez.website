@@ -1,6 +1,6 @@
 {
   "name": "pthernandez",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Personal website portfolio",
   "author": "Tomas Hernandez",
@@ -13,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "contentful": "^7.14.5",
     "nuxt": "^2.0.0",
     "vue-carousel-3d": "^0.2.0",
     "vue-material-design-icons": "^4.6.0",

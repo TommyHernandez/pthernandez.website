@@ -46,9 +46,9 @@
       <nuxt-child />
     </div>
     <footer>
-      <div class="">
+      <span>
         Made with <img id="heart" src="../src/assets/heart.svg" /> in Granada
-      </div>
+      </span>
       <span class="cr">
         2020 Pthernandez
       </span>
@@ -57,15 +57,15 @@
 </template>
 
 <script>
-import { VueTypedJs } from 'vue-typed-js'
-import Nav from '~/components/Nav'
+import { VueTypedJs } from 'vue-typed-js';
+import Nav from '~/components/Nav';
 
 export default {
   components: {
     Nav,
     VueTypedJs
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -100,7 +100,7 @@ footer {
     'info-column'
     'content'
     'footer';
-  grid-template-rows: 60px auto auto 82px;
+  grid-template-rows: 60px auto auto 40px;
   background: $bgGrey;
   @media (min-width: 1180px) {
     grid-template-areas:
@@ -108,7 +108,7 @@ footer {
       'tot info-column content'
       'footer footer footer';
     grid-template-columns: 5% 400px auto;
-    grid-template-rows: 60px auto 90px;
+    grid-template-rows: 60px auto 50px;
   }
   @media (min-width: 1800px) {
     grid-template-columns: 2.5em 400px auto;
@@ -200,7 +200,9 @@ h2.title {
   opacity: 0;
 }
 footer {
-  padding: 16px 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background: $grey;
   text-align: center;
   color: $white;

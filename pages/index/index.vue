@@ -19,13 +19,13 @@
   </div>
 </template>
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d'
-import Card from '../../components/Card'
-import bsreact from '../../src/assets/bs-react.jpg'
-import bsvue from '../../src/assets/bs-vue.jpg'
-import wp from '../../src/assets/wordpress.jpg'
-import pixelarium from '../../src/assets/pixlarium.jpg'
-import pthdc from '../../src/assets/pth.jpg'
+import { Carousel3d, Slide } from 'vue-carousel-3d';
+import Card from '../../components/Card';
+import bsreact from '../../src/assets/bs-react.jpg';
+import bsvue from '../../src/assets/bs-vue.jpg';
+import wp from '../../src/assets/wordpress.jpg';
+import pixelarium from '../../src/assets/pixlarium.jpg';
+import pthdc from '../../src/assets/pth.jpg';
 export default {
   components: {
     Carousel3d,
@@ -83,15 +83,15 @@ export default {
         }
       ],
       slidesToShow: 3
-    }
+    };
   },
   mounted() {
-    const screenSize = window.outerWidth
+    const screenSize = window.outerWidth;
     if (screenSize > 1800) {
-      this.slidesToShow = 5
+      this.slidesToShow = 5;
     }
   }
-}
+};
 </script>
 <style lang="scss">
 @import '@/assets/globals.scss';

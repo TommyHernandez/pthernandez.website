@@ -16,7 +16,7 @@ export default {
     title: String,
     description: String
   }
-}
+};
 </script>
 <style lang="scss">
 @import '../assets/globals.scss';

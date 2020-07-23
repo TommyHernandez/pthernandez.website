@@ -58,11 +58,11 @@
   </section>
 </template>
 <script>
-import Dynamic from 'vue-material-design-icons/rocketOutline.vue'
-import Responsive from 'vue-material-design-icons/responsive.vue'
-import Fast from 'vue-material-design-icons/speedometer.vue'
-import Intuitive from 'vue-material-design-icons/forwardburger.vue'
-import HighLightCard from '../../components/HighLight-card'
+import Dynamic from 'vue-material-design-icons/rocketOutline.vue';
+import Responsive from 'vue-material-design-icons/responsive.vue';
+import Fast from 'vue-material-design-icons/speedometer.vue';
+import Intuitive from 'vue-material-design-icons/forwardburger.vue';
+import HighLightCard from '../../components/HighLight-card';
 
 export default {
   name: 'Aboutme',
@@ -87,9 +87,9 @@ export default {
         { name: 'UX Design', percent: '60%' },
         { name: 'Java', percent: '65%' }
       ]
-    }
+    };
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 @import '../../assets/globals.scss';

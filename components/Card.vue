@@ -38,7 +38,7 @@ export default {
     urlCode: String,
     urlImg: String
   }
-}
+};
 </script>
 <style lang="scss">
 @import '@/assets/globals.scss';

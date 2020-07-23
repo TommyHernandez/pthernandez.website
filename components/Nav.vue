@@ -5,12 +5,13 @@
         <nuxt-link to="/" exact>Inicio</nuxt-link>
         <nuxt-link to="/about">Sobre mi</nuxt-link>
         <nuxt-link to="/contact">Contactame</nuxt-link>
+        <nuxt-link to="/libros-recomendados">Libros recomendados</nuxt-link>
       </div>
     </div>
   </nav>
 </template>
 <script>
-export default {}
+export default {};
 </script>
 <style lang="scss">
 @import '@/assets/globals.scss';
@@ -38,9 +39,6 @@ nav {
   }
   .nav-container {
     background: $grey;
-    width: 100%;
-    position: fixed;
-    top: 0px;
     height: 60px;
     border-bottom: 3px solid $orangeB;
   }
@@ -51,7 +49,7 @@ nav {
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
-    @media (min-width: 1436px) {
+    @media (min-width: 1336px) {
       margin: 0;
       justify-content: flex-start;
       margin-left: 24px;
