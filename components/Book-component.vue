@@ -49,6 +49,8 @@ export default {
       width: 75%;
     }
     .skew {
+      display: block;
+      width: 100%;
       padding: 8px 1rem;
       background: $orangeB;
       color: $white;
