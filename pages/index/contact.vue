@@ -1,28 +1,36 @@
 <template>
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2 class="contact__title sect-title">Puedes encontrarme</h2>
     <p class="contact__phrase">
       Estoy presente en todas estas redes. Contáctame si tienes una buena idea y
       crees que puedo ayudarte.
     </p>
     <div class="contact__network-links">
-      <ul>
-        <li>
-          <a href="https://github.com/TommyHernandez"> Github</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/pedrothdc/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/pedrothdc">Twitter</a>
-        </li>
-      </ul>
+      <Network-card url="https://github.com/TommyHernandez">
+        <Github />
+      </Network-card>
+      <Network-card url="https://www.linkedin.com/in/pedrothdc/">
+        <Twitter />
+      </Network-card>
+      <Network-card url="https://twitter.com/pedrothdc">
+        <Linkedin />
+      </Network-card>
     </div>
   </section>
 </template>
 <script>
+import Twitter from 'vue-material-design-icons/Twitter';
+import Linkedin from 'vue-material-design-icons/Linkedin';
+import Github from 'vue-material-design-icons/Github';
+import NetworkCard from '~/components/Network-card';
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  components: {
+    NetworkCard,
+    Twitter,
+    Linkedin,
+    Github
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -31,24 +39,11 @@ export default {
   font-size: 1.2em;
 }
 .contact__network-links {
-  max-width: 80%;
-  margin: 1.2em auto;
-  ul {
-    display: flex;
-    justify-content: space-between;
-    li {
-      list-style: none;
-      a {
-        display: block;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: $black;
-        transition: color 0.2s ease-in-out;
-        &:hover {
-          color: $orangeA;
-        }
-      }
-    }
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  @media (min-width: 568px) {
+    flex-wrap: nowrap;
   }
 }
 </style>

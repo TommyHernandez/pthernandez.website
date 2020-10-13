@@ -85,7 +85,8 @@ export default {
         { name: 'UI Design', percent: '60%' },
         { name: 'SEO', percent: '70%' },
         { name: 'UX Design', percent: '60%' },
-        { name: 'Java', percent: '65%' }
+        { name: 'Java', percent: '65%' },
+        { name: 'Docker', percent: '40%' }
       ]
     };
   }

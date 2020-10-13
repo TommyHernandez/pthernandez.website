@@ -49,9 +49,7 @@
       <span>
         Made with <img id="heart" src="../src/assets/heart.svg" /> in Granada
       </span>
-      <span class="cr">
-        2020 Pthernandez
-      </span>
+      <span class="cr">{{ year }} Pthernandez</span>
     </footer>
   </section>
 </template>
@@ -64,6 +62,11 @@ export default {
   components: {
     Nav,
     VueTypedJs
+  },
+  data() {
+    return {
+      year: new Date().year
+    };
   }
 };
 </script>
@@ -100,7 +103,7 @@ footer {
     'info-column'
     'content'
     'footer';
-  grid-template-rows: 60px auto auto 40px;
+  grid-template-rows: auto auto auto 40px;
   background: $bgGrey;
   @media (min-width: 1180px) {
     grid-template-areas:
