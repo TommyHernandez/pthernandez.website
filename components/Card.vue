@@ -41,7 +41,8 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../assets/settings/variables';
+@use '../assets/tools/mixins';
 .card {
   border-radius: 4px;
   display: flex;
@@ -50,20 +51,20 @@ export default {
   height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-bottom: none;
-  background: $white;
+  background: variables.$background-white;
 }
 .card__img-container {
   object-fit: cover;
 }
 .card__title {
-  @include fontBold;
+  @include mixins.fontBold;
   font-size: 1.1em;
-  color: $black;
+  color: variables.$text-black;
 }
 .card__subtitle {
-  @include fontLight;
+  @include mixins.fontLight;
   font-size: 0.9rem;
-  color: $black;
+  color: variables.$text-black;
 }
 .card__text-content {
   padding: 16px 16px 0 16px;
@@ -88,13 +89,13 @@ export default {
       line-height: 38px;
       padding: 0 8px;
       width: 150px;
-      color: $white;
+      color: variables.$text-white;
       &:after {
         content: '';
         display: block;
         height: 6px;
         position: absolute;
-        background: $baseOrange;
+        background: variables.$baseOrange;
         bottom: 0px;
         left: 0px;
         width: 100%;
@@ -109,11 +110,11 @@ export default {
         }
       }
       &.btn--filled {
-        background: $orangeB;
+        background: variables.$orangeB;
       }
       &.btn--outline {
-        border: 2px solid $orangeB;
-        color: $black;
+        border: 2px solid variables.$orangeB;
+        color: variables.$text-black;
         line-height: 34px;
       }
     }

@@ -1,6 +1,7 @@
 // ./nuxt.config.js
 const config = require('./.contentful.json');
 export default {
+  target: 'static',
   mode: 'spa',
   /*
    ** Headers of the page

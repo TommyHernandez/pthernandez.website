@@ -36,7 +36,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../assets/settings/variables';
 .book-element {
   margin-bottom: 1.5rem;
   figure {
@@ -52,8 +52,8 @@ export default {
       display: block;
       width: 100%;
       padding: 8px 1rem;
-      background: $orangeB;
-      color: $white;
+      background: variables.$orangeB;
+      color: variables.$text-white;
       clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
       h3 {
         font-size: 1rem;

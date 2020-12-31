@@ -14,7 +14,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../assets/settings/variables';
 .network-card {
   display: flex;
   justify-content: center;
@@ -31,12 +31,12 @@ export default {
     width: 100%;
   }
   .material-design-icon__svg {
-    color: $white;
+    color: variables.$text-white;
     transform: scale(5.5);
   }
   &:hover {
     .material-design-icon__svg {
-      color: $orangeA;
+      color: variables.$orangeA;
     }
   }
   &:nth-child(even) {

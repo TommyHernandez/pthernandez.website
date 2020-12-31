@@ -1,0 +1,24 @@
+
+$_fontFamily:'M PLUS Rounded 1c',
+sans-serif;
+
+/* Mixins */
+@mixin fontLight {
+  font-family: $_fontFamily;
+  font-weight: 300;
+}
+
+@mixin fontRegular {
+  font-family: $_fontFamily;
+  font-weight: 400;
+}
+
+@mixin fontBold {
+  font-family: $_fontFamily;
+  font-weight: 700;
+}
+
+@mixin fontBlack {
+  font-family: $_fontFamily;
+  font-weight: 900;
+}

@@ -34,7 +34,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '../../assets/globals.scss';
 .contact__phrase {
   font-size: 1.2em;
 }

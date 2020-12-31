@@ -93,9 +93,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '../../assets/globals.scss';
+@use '../../assets/settings/variables';
+@use '../../assets/tools/mixins';
 .about__title {
-  @include fontBlack;
+  @include mixins.fontBlack;
 }
 .about__highlights {
   display: flex;
@@ -127,11 +128,11 @@ export default {
   display: block;
   width: 106px;
   padding: 0 8px;
-  border-right: 1px solid $white;
-  background: $orangeA;
+  border-right: 1px solid #fff;
+  background: variables.$orangeA;
   line-height: 28px;
-  color: $white;
-  @include fontBold;
+  color: variables.$text-white;
+  @include mixins.fontBold;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -144,12 +145,12 @@ export default {
 .skill__bar {
   display: block;
   width: 0px;
-  background: $orangeB;
+  background: variables.$orangeB;
   transition: all 1s ease-in;
 }
 .skill__percent {
   line-height: 28px;
   padding: 0 8px;
-  color: $white;
+  color: variables.$text-white;
 }
 </style>

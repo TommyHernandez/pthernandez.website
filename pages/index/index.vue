@@ -94,12 +94,12 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../../assets/settings/variables';
 .jobs {
   height: 100%;
   overflow: hidden;
   .jobs__subtitle {
-    color: $orangeA;
+    color: variables.$orangeA;
     font-weight: 300;
     margin-bottom: 1.2em;
     font-size: 0.9rem;
@@ -114,7 +114,7 @@ export default {
 .carousel-3d-slide {
   background: none;
   border: none;
-  background-color: #fff;
+  background-color: variables.$background-white;
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border: none;

@@ -72,12 +72,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../assets/settings/variables';
+@use '../assets/tools/mixins';
 .info-column {
   grid-area: info-column;
   @media (min-width: 1180px) {
-    border-right: 2px solid $grey;
-    border-left: 2px solid $grey;
+    border-right: 2px solid variables.$grey;
+    border-left: 2px solid variables.$grey;
   }
 }
 .content-area {
@@ -104,7 +105,7 @@ footer {
     'content'
     'footer';
   grid-template-rows: auto auto auto 40px;
-  background: $bgGrey;
+  background: variables.$background-grey;
   @media (min-width: 1180px) {
     grid-template-areas:
       'tot info-column nav'
@@ -123,7 +124,7 @@ footer {
   @media (min-width: 1180px) {
     display: block;
     height: 60px;
-    background: $grey;
+    background: variables.$grey;
   }
 }
 .title {
@@ -131,13 +132,13 @@ footer {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: bolder;
-  color: $black;
+  color: variables.$text-black;
   letter-spacing: 1px;
 }
 .sect-title {
-  @include fontBlack;
+  @include mixins.fontBlack;
   margin-bottom: 16px;
-  color: $black;
+  color: variables.$text-black;
   letter-spacing: 1px;
 }
 h2.title {
@@ -151,7 +152,7 @@ h2.title {
   background-size: cover;
   height: 25vh;
   margin-bottom: 5em;
-  border-bottom: 4px solid $orangeB;
+  border-bottom: 4px solid variables.$orangeB;
   @media (min-width: 1600px) {
     height: 30vh;
   }
@@ -168,20 +169,20 @@ h2.title {
   transform: translatey(50%);
   left: calc(50% - 4.559em);
   transition: all 0.3s ease-in-out;
-  border: 3px solid $baseOrange;
+  border: 3px solid variables.$baseOrange;
   &:hover {
     border-radius: 10px;
   }
 }
 .description {
   padding: 16px;
-  color: $black;
+  color: variables.$text-black;
   h1 {
     font-size: 1.6rem;
   }
   .subtitle {
     display: flex;
-    color: $baseOrange;
+    color: variables.$baseOrange;
     word-spacing: 5px;
     padding-bottom: 15px;
     font-weight: 400;
@@ -206,9 +207,9 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: $grey;
+  background: variables.$grey;
   text-align: center;
-  color: $white;
+  color: variables.$text-white;
   > div {
     padding-bottom: 8px;
   }

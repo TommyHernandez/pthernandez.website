@@ -19,7 +19,8 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '../assets/globals.scss';
+@use '../assets/settings/variables';
+@use '../assets/tools/mixins';
 .hl {
   flex: 1 1 100%;
   margin-bottom: 1.3em;
@@ -31,25 +32,26 @@ export default {
   @media (min-width: 1800px) {
     max-width: 340px;
   }
-}
-.hl__icon-rounded {
-  margin: 0 auto 24px auto;
-  font-size: 40pt;
-  color: $white;
-  background: $baseOrange;
-  border-radius: 57px;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-}
-.hl__title {
-  @include fontBold;
-  color: $black;
-  font-size: 1.3em;
-  text-align: center;
-}
-.hl__description {
-  text-align: center;
+
+  &__icon-rounded {
+    margin: 0 auto 24px auto;
+    font-size: 40pt;
+    color: variables.$text-white;
+    background: variables.$baseOrange;
+    border-radius: 57px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+  &__title {
+    @include mixins.fontBold;
+    color: variables.$text-black;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+  }
 }
 </style>

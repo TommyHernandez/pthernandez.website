@@ -1,6 +1,6 @@
 {
   "name": "pthernandez",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "description": "Personal website portfolio",
   "author": "Tomas Hernandez",
@@ -14,25 +14,27 @@
   },
   "dependencies": {
     "contentful": "^7.14.5",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.14.12",
     "vue-carousel-3d": "^0.2.0",
     "vue-material-design-icons": "^4.6.0",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^2.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
+    "webpack":"5.0.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.1",
     "@vue/test-utils": "^1.0.0-beta.27",
+    "@babel/core": "7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^24.1.0",
+    "jest": "^27.0.0",
     "prettier": "^1.19.1",
     "sass": "^1.19.0",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^8.0.2",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-jest": "^4.0.0-0"
   }

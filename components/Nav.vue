@@ -31,11 +31,12 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '@/assets/globals.scss';
+@use '../assets/settings/variables';
+@use '../assets/tools/mixins';
 nav {
   grid-area: nav;
-  background: $grey;
-  border-bottom: 3px solid $orangeB;
+  background: variables.$grey;
+  border-bottom: 3px solid variables.$orangeB;
   .nav-wrapper {
     min-height: 60px;
     padding: 10px 0;
@@ -56,7 +57,7 @@ nav {
   .bar3 {
     width: 35px;
     height: 5px;
-    background-color: $white;
+    background-color: variables.$background-white;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -96,17 +97,17 @@ nav {
       height: 92px;
     }
     a {
-      @include fontLight;
+      @include mixins.fontLight;
       display: block;
       text-decoration: none;
-      color: #fff;
+      color: variables.$text-white;
       transition: color 0.2s ease-in;
       &:hover {
-        color: $orangeB;
+        color: variables.$orangeB;
       }
       &.nuxt-link-active {
-        @include fontBold;
-        color: $orangeA;
+        @include mixins.fontBold;
+        color: variables.$orangeA;
       }
       @media (min-width: 1436px) {
         margin-right: 32px;
