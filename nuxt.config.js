@@ -2,7 +2,7 @@
 const config = require('./.contentful.json');
 export default {
   target: 'static',
-  mode: 'spa',
+  ssr: false,
   /*
    ** Headers of the page
    */
