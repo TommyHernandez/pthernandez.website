@@ -72,7 +72,7 @@ export default {
       }
     }
   }
-  .book-element__info-bar {
+  &__info-bar {
     padding: 8px 16px;
     display: flex;
     justify-content: space-between;

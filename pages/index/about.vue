@@ -95,29 +95,31 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/settings/variables';
 @use '../../assets/tools/mixins';
-.about__title {
-  @include mixins.fontBlack;
-}
-.about__highlights {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.about__content-area {
-  @media (min-width: 1436px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-column-gap: 1rem;
+.about {
+  &__title {
+    @include mixins.fontBlack;
   }
-}
-.about__bio {
-  padding-left: 16px;
-  margin-bottom: 1.5rem;
-}
-.about__skills {
-  padding: 0 1rem;
+  &__highlights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__content-area {
+    @media (min-width: 1436px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: auto;
+      grid-column-gap: 1rem;
+    }
+  }
+  &__bio {
+    padding-left: 16px;
+    margin-bottom: 1.5rem;
+  }
+  &__skills {
+    padding: 0 1rem;
+  }
 }
 .skills__tech {
   display: flex;
