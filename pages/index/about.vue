@@ -58,10 +58,10 @@
   </section>
 </template>
 <script>
-import Dynamic from 'vue-material-design-icons/rocketOutline.vue';
-import Responsive from 'vue-material-design-icons/responsive.vue';
-import Fast from 'vue-material-design-icons/speedometer.vue';
-import Intuitive from 'vue-material-design-icons/forwardburger.vue';
+import Dynamic from 'vue-material-design-icons/RocketOutline.vue';
+import Responsive from 'vue-material-design-icons/Responsive.vue';
+import Fast from 'vue-material-design-icons/Speedometer.vue';
+import Intuitive from 'vue-material-design-icons/Forwardburger.vue';
 import HighLightCard from '../../components/HighLight-card';
 
 export default {
