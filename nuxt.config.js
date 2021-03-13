@@ -7,17 +7,19 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Pedro Hernández | Web developer Portfolio"',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          'Web personal a modo de portfolio del desarrollador web Pedro Hernández, espcialista en desarrollo frontend HTML, CSS  y Javascript.'
       }
     ],
     link: [
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com/' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',

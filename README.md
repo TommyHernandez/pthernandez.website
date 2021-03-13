@@ -20,3 +20,15 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Troubleshooting
+
+### Linux
+
+> Error: System Limit For Number Of File Watchers Reached
+
+try:
+
+```
+  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```

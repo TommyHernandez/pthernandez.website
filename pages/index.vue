@@ -35,10 +35,15 @@
           &gt;
         </span>
         <p>
-          Soy desarrollador web con más de 5 años de experiencia. He trabajado
-          para empresas de todo tipo y para clientes de toda índole. Hago de mi
-          afición una profesión, para mí el desarrollo es algo más que una forma
-          de ganarme la vida.
+          Llevo 5 años dedicandome al desarrollo. Soy un apasionado de la
+          tecnología que ha tenido la oportunidad de ir creciendo en cada una de
+          las empresas por las que ha pasado. He podido trabajar para clientes
+          muy variados y he realizado labores que van desde la formación y el
+          soporte técnico hasta estar al frente de un pequeño equipo de
+          desarrolladores y definir la arquitectura de un proyecto futuro. Me
+          gusta el código limpio y facil de seguir y por supuesto seguro. Estoy
+          muy concienciado con la usabilidad y la accesibilidad. Si un sitio es
+          bueno pero no se puede usar no sirve para nada.
         </p>
       </div>
     </div>
@@ -84,6 +89,7 @@ export default {
 .content-area {
   grid-area: content;
   padding: 16px;
+  overflow-y: scroll;
   @media (min-width: 1180px) {
     padding: 24px;
   }
@@ -97,7 +103,7 @@ footer {
   padding: 0;
   width: 100%;
   overflow: hidden;
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-areas:
     'nav'

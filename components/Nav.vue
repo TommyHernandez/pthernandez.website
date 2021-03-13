@@ -97,7 +97,7 @@ nav {
       height: 92px;
     }
     a {
-      @include mixins.fontLight;
+      @include mixins.fontBold;
       display: block;
       text-decoration: none;
       color: variables.$text-white;
@@ -105,9 +105,12 @@ nav {
       &:hover {
         color: variables.$orangeB;
       }
+      &:focus {
+        outline: 1px dashed variables.$border-white;
+      }
       &.nuxt-link-active {
-        @include mixins.fontBold;
         color: variables.$orangeA;
+        text-decoration: underline;
       }
       @media (min-width: 1436px) {
         margin-right: 32px;
