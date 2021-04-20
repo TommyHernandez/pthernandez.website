@@ -13,6 +13,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@babel/helper-define-map": "^7.13.12",
+    "axios": "^0.21.1",
     "contentful": "^7.14.5",
     "nuxt": "^2.14.12",
     "vue-carousel-3d": "^0.2.0",
@@ -34,10 +36,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^27.0.0",
     "prettier": "^1.19.1",
-    "sass": "^1.19.0",
-    "sass-loader": "^8.0.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-jest": "^4.0.0-0",
-    "webpack": "5.0.0"
+    "webpack": "^5.34.0"
   }
 }
