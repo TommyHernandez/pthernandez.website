@@ -9,7 +9,6 @@
       <div class="wrapper" :class="{ expanded: showMenu }">
         <nuxt-link to="/" exact>Inicio</nuxt-link>
         <nuxt-link to="/about">Sobre mi</nuxt-link>
-        <nuxt-link to="/contact#contact">Contactame</nuxt-link>
         <nuxt-link to="/libros-recomendados">Libros recomendados</nuxt-link>
       </div>
     </div>
