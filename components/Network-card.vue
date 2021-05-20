@@ -9,8 +9,8 @@
 export default {
   name: 'NetworkCard',
   props: {
-    url: String
-  }
+    url: String,
+  },
 };
 </script>
 <style lang="scss">

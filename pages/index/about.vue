@@ -71,7 +71,7 @@ export default {
     Responsive,
     Fast,
     Intuitive,
-    HighLightCard
+    HighLightCard,
   },
   data() {
     return {
@@ -86,10 +86,10 @@ export default {
         { name: 'SEO', percent: '70%' },
         { name: 'UX Design', percent: '60%' },
         { name: 'Java', percent: '65%' },
-        { name: 'Docker', percent: '40%' }
-      ]
+        { name: 'Docker', percent: '40%' },
+      ],
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>

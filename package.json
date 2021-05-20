@@ -5,7 +5,7 @@
   "description": "Personal website portfolio",
   "author": "Tomas Hernandez",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
     "generate": "nuxt generate",

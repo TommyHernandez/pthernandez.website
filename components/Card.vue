@@ -36,8 +36,8 @@ export default {
     description: String,
     urlDemo: String,
     urlCode: String,
-    urlImg: String
-  }
+    urlImg: String,
+  },
 };
 </script>
 <style lang="scss">

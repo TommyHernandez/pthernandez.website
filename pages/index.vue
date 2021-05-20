@@ -26,7 +26,7 @@
               'Vue',
               'Nuxt',
               'Vuex',
-              'Web developer'
+              'Web developer',
             ]"
             cursor-char="/"
           >
@@ -66,13 +66,13 @@ import Nav from '~/components/Nav';
 export default {
   components: {
     Nav,
-    VueTypedJs
+    VueTypedJs,
   },
   data() {
     return {
-      year: new Date().year
+      year: new Date().year,
     };
-  }
+  },
 };
 </script>
 

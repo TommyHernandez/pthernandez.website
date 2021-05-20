@@ -14,8 +14,8 @@ export default {
   name: 'HighLightCard',
   props: {
     title: String,
-    description: String
-  }
+    description: String,
+  },
 };
 </script>
 <style lang="scss">

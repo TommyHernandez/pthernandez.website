@@ -1,8 +1,6 @@
 <template>
   <section class="recommendations">
-    <h2 class="recommendations__title">
-      Y aquí os recomiento...
-    </h2>
+    <h2 class="recommendations__title">Y aquí os recomiento...</h2>
     <p class="recommendations__paragraph recommendations__paragraph--strong">
       algunos de los libros que yo he leido y me parecen imprescindibles para
       mejorar como desarollador.
@@ -28,22 +26,22 @@ const client = createClient();
 export default {
   name: 'Recommendations',
   components: {
-    BookComponent
+    BookComponent,
   },
   asyncData({ env }) {
     return client
       .getEntries({
-        content_type: 'book'
+        content_type: 'book',
       })
       .then((books) => {
         // return data that should be available
         // in the template
         return {
-          books: helper.mapBookResponseToObjet(books.items)
+          books: helper.mapBookResponseToObjet(books.items),
         };
       })
       .catch(console.error);
-  }
+  },
 };
 </script>
 <style lang="scss">

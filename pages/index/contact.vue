@@ -29,8 +29,8 @@ export default {
     NetworkCard,
     Twitter,
     Linkedin,
-    Github
-  }
+    Github,
+  },
 };
 </script>
 <style lang="scss" scoped>

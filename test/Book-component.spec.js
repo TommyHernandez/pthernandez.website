@@ -8,7 +8,7 @@ describe('Test basic functions in Book component', () => {
       description: 'Book description',
       urlImg: 'img/bookCover.png',
       author: 'Brad Forst',
-      language: 'English'
+      language: 'English',
     });
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
@@ -18,7 +18,7 @@ describe('Test basic functions in Book component', () => {
       description: 'Book description',
       urlImg: 'img/bookCover.png',
       author: 'Brad Forst',
-      language: 'English'
+      language: 'English',
     });
     expect(wrapper.text()).toContain('Atomic Design');
   });

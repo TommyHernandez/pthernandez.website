@@ -30,7 +30,7 @@ export default {
   components: {
     Carousel3d,
     Slide,
-    Card
+    Card,
   },
   data() {
     return {
@@ -43,7 +43,7 @@ export default {
             'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
-          urlImg: bsreact
+          urlImg: bsreact,
         },
         {
           title: 'Crysmrnails',
@@ -52,7 +52,7 @@ export default {
             'Está ha sido hasta el momento la ultima web que he realizado en Wordpress. A diferencia de la web de Gema en esta el cliente es quien lagestiona, quedando mi labor restringida al mantenimiento del servidor, dominio, HTTPS...',
           urlDemo: 'https://www.crysmrnails.es/',
           urlCode: '',
-          urlImg: wp
+          urlImg: wp,
         },
         {
           title: 'New Best Secret UI Test',
@@ -61,7 +61,7 @@ export default {
             'Esta es una versión renovada del primer test que hice. Esta vez con un diseño más completo y bonito. Uso Vue, SASS para el CSS y la News API de Google. Como la ves anterior,nada de Frameworks CSS',
           urlDemo: 'http://uitest-vue.pthernandez.es',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest-vue',
-          urlImg: bsvue
+          urlImg: bsvue,
         },
         {
           title: 'Pixelarium Theme',
@@ -70,7 +70,7 @@ export default {
             'Esto es un template que desarrollé para Wordpress mientras estudiaba. Parte de la base de Bootstrap 3, fué un proyecto para aprender más que para otra cosa.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/pixelariumTheme',
-          urlImg: pixelarium
+          urlImg: pixelarium,
         },
         {
           title: 'Pthernandez.es',
@@ -79,10 +79,10 @@ export default {
             'La web que visitas ahora mismo. Para esta web no he usado ningun Framework CSS. He decido usar Nuxt por qe dá una serie de ventajas frente a Vue solo, Nuxt me da la posibilidad de escalar la web.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/pthernandez.website',
-          urlImg: pthdc
-        }
+          urlImg: pthdc,
+        },
       ],
-      slidesToShow: 3
+      slidesToShow: 3,
     };
   },
   mounted() {
@@ -90,7 +90,7 @@ export default {
     if (screenSize > 1800) {
       this.slidesToShow = 5;
     }
-  }
+  },
 };
 </script>
 <style lang="scss">

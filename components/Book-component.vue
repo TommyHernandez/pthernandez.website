@@ -31,8 +31,8 @@ export default {
     description: String,
     urlImg: String,
     author: String,
-    language: String
-  }
+    language: String,
+  },
 };
 </script>
 <style lang="scss">

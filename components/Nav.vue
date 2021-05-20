@@ -19,14 +19,14 @@ export default {
   name: 'Nav',
   data() {
     return {
-      showMenu: false
+      showMenu: false,
     };
   },
   methods: {
     expand() {
       this.showMenu = !this.showMenu;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">
