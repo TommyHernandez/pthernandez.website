@@ -1,5 +1,4 @@
 // ./nuxt.config.js
-const config = require('./.contentful.json');
 export default {
   target: 'static',
   ssr: false,
@@ -52,12 +51,10 @@ export default {
    */
   modules: [],
   env: {
-    CTF_SPACE_ID: config.CTF_SPACE_ID || process.env.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN:
-      config.CTF_CDA_ACCESS_TOKEN || process.env.CTF_CDA_ACCESS_TOKEN,
-    CTF_PERSON_ID: config.CTF_PERSON_ID || process.env.CTF_PERSON_ID,
-    CTF_BLOG_POST_TYPE_ID:
-      config.CTF_BLOG_POST_TYPE_ID || process.env.CTF_BLOG_POST_TYPE_ID,
+    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
+    CTF_PERSON_ID: process.env.CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID: process.env.CTF_BLOG_POST_TYPE_ID,
   },
   /*
    ** Build configuration
