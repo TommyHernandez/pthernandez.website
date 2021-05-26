@@ -19,12 +19,12 @@
               'PHP',
               'Responsive Design',
               'MySQL',
+              'Docker',
               'Javascript',
               'React',
-              'Redux',
+              'UX',
               'Vue',
               'Nuxt',
-              'Vuex',
               'Web developer',
             ]"
             cursor-char="/"
@@ -37,13 +37,18 @@
           Llevo 5 años dedicandome al desarrollo. Soy un apasionado de la
           tecnología que ha tenido la oportunidad de ir creciendo en cada una de
           las empresas por las que ha pasado. He podido trabajar para clientes
-          muy variados y he realizado labores que van desde la formación y el
-          soporte técnico hasta estar al frente de un pequeño equipo de
-          desarrolladores y definir la arquitectura de un proyecto futuro. Me
-          gusta el código limpio y facil de seguir y por supuesto seguro. Estoy
-          muy concienciado con la usabilidad y la accesibilidad. Si un sitio es
-          bueno pero no se puede usar no sirve para nada.
+          muy variados y he realizado labores variadas dentro del mundo del
+          desarrollo. Me gusta el código limpio y facil de seguir y por supuesto
+          seguro.
         </p>
+      </div>
+      <div class="network-section">
+        <a href="https://github.com/TommyHernandez">
+          <Github />
+        </a>
+        <a href="https://www.linkedin.com/in/pedrothdc/">
+          <Linkedin />
+        </a>
       </div>
     </div>
     <div class="content-area">
@@ -60,12 +65,16 @@
 
 <script>
 import { VueTypedJs } from 'vue-typed-js';
+import Linkedin from 'vue-material-design-icons/Linkedin';
+import Github from 'vue-material-design-icons/Github';
 import Nav from '~/components/Nav';
 
 export default {
   components: {
     Nav,
     VueTypedJs,
+    Linkedin,
+    Github,
   },
   data() {
     return {
@@ -220,5 +229,21 @@ footer {
 #heart {
   height: 22px;
   vertical-align: middle;
+}
+.network-section {
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    display: inline-block;
+    font-size: 2.4rem;
+    color: variables.$text-black;
+    margin: 0 12px;
+    transition: color ease-in 0.2s;
+    &:hover {
+      color: variables.$green;
+    }
+  }
 }
 </style>

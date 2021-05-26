@@ -89,13 +89,13 @@ export default {
       line-height: 38px;
       padding: 0 8px;
       width: 150px;
-      color: variables.$text-white;
+      color: variables.$darkPurple;
       &:after {
         content: '';
         display: block;
         height: 6px;
         position: absolute;
-        background: variables.$orange;
+        background: variables.$green;
         bottom: 0px;
         left: 0px;
         width: 100%;
@@ -110,10 +110,11 @@ export default {
         }
       }
       &.btn--filled {
-        background: variables.$orangeB;
+        background: variables.$greenDarker;
+        color: variables.$text-white;
       }
       &.btn--outline {
-        border: 2px solid variables.$orangeB;
+        border: 2px solid variables.$greenDarker;
         color: variables.$text-black;
         line-height: 34px;
       }
