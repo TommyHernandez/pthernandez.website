@@ -52,7 +52,7 @@ export default {
       display: block;
       width: 100%;
       padding: 8px 1rem;
-      background: variables.$orangeB;
+      background: variables.$green;
       color: variables.$text-white;
       clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
       h3 {

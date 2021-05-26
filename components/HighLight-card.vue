@@ -37,7 +37,7 @@ export default {
     margin: 0 auto 24px auto;
     font-size: 40pt;
     color: variables.$text-white;
-    background: variables.$baseOrange;
+    background: variables.$green;
     border-radius: 57px;
     width: 100px;
     height: 100px;

@@ -99,7 +99,7 @@ export default {
   height: 100%;
   overflow: hidden;
   .jobs__subtitle {
-    color: variables.$orangeA;
+    color: variables.$text-black;
     font-weight: 300;
     margin-bottom: 1.2em;
     font-size: 0.9rem;

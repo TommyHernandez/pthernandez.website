@@ -1,6 +1,5 @@
 <template>
   <section class="container">
-    <span class="trick-or-treat"></span>
     <Nav />
     <div class="info-column">
       <div class="bg-img head">
@@ -79,6 +78,11 @@ export default {
 <style lang="scss">
 @use '../assets/settings/variables';
 @use '../assets/tools/mixins';
+h1,
+h2,
+h3 {
+  color: variables.$darkPurple;
+}
 .info-column {
   grid-area: info-column;
   @media (min-width: 1180px) {
@@ -102,8 +106,7 @@ footer {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-areas:
     'nav'
@@ -112,25 +115,18 @@ footer {
     'footer';
   grid-template-rows: auto auto auto 40px;
   background: variables.$background-grey;
+  overflow-x: hidden;
   @media (min-width: 1180px) {
     grid-template-areas:
-      'tot info-column nav'
-      'tot info-column content'
-      'footer footer footer';
-    grid-template-columns: 5% 400px auto;
+      'info-column nav'
+      'info-column content'
+      'footer footer';
+    grid-template-columns: 400px auto;
     grid-template-rows: 60px auto 50px;
+    overflow: hidden;
   }
   @media (min-width: 1800px) {
-    grid-template-columns: 2.5em 400px auto;
-  }
-}
-.trick-or-treat {
-  grid-area: tot;
-  display: none;
-  @media (min-width: 1180px) {
-    display: block;
-    height: 60px;
-    background: variables.$grey;
+    grid-template-columns: 400px auto;
   }
 }
 .title {
@@ -138,13 +134,11 @@ footer {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: bolder;
-  color: variables.$text-black;
   letter-spacing: 1px;
 }
 .sect-title {
   @include mixins.fontBlack;
   margin-bottom: 16px;
-  color: variables.$text-black;
   letter-spacing: 1px;
 }
 h2.title {
@@ -158,7 +152,6 @@ h2.title {
   background-size: cover;
   height: 25vh;
   margin-bottom: 5em;
-  border-bottom: 4px solid variables.$orangeB;
   @media (min-width: 1600px) {
     height: 30vh;
   }
@@ -175,7 +168,10 @@ h2.title {
   transform: translatey(50%);
   left: calc(50% - 4.559em);
   transition: all 0.3s ease-in-out;
-  border: 3px solid variables.$baseOrange;
+  border: 1px solid variables.$aquaGreen;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   &:hover {
     border-radius: 10px;
   }
@@ -188,7 +184,7 @@ h2.title {
   }
   .subtitle {
     display: flex;
-    color: variables.$baseOrange;
+    color: variables.$green;
     word-spacing: 5px;
     padding-bottom: 15px;
     font-weight: 400;

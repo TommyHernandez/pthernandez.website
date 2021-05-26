@@ -131,7 +131,7 @@ export default {
   width: 106px;
   padding: 0 8px;
   border-right: 1px solid #fff;
-  background: variables.$orangeA;
+  background: #586c0d;
   line-height: 28px;
   color: variables.$text-white;
   @include mixins.fontBold;
@@ -147,7 +147,7 @@ export default {
 .skill__bar {
   display: block;
   width: 0px;
-  background: variables.$orangeB;
+  background: variables.$green;
   transition: all 1s ease-in;
 }
 .skill__percent {

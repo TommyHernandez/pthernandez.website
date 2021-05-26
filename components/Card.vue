@@ -95,7 +95,7 @@ export default {
         display: block;
         height: 6px;
         position: absolute;
-        background: variables.$baseOrange;
+        background: variables.$orange;
         bottom: 0px;
         left: 0px;
         width: 100%;
