@@ -157,7 +157,7 @@ h2.title {
 }
 .bg-img.head {
   position: relative;
-  background: url('../src/assets/cover.jpg') center center no-repeat;
+  background: url('../src/assets/coverx2.jpg') center center no-repeat;
   background-size: cover;
   height: 25vh;
   margin-bottom: 5em;

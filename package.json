@@ -16,7 +16,7 @@
     "@babel/helper-define-map": "^7.13.12",
     "axios": "^0.21.1",
     "contentful": "^8.3.1",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.7",
     "vue-carousel-3d": "^1.0.1",
     "vue-material-design-icons": "^4.11.0",
     "vue-typed-js": "^0.1.2"

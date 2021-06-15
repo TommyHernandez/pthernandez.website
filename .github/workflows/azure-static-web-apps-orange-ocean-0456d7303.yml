@@ -21,12 +21,13 @@ jobs:
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
+        env:
+          CTF_PERSON_ID: ${{ secrets.CTF_PERSON_ID }}
+          CTF_BLOG_POST_TYPE_ID: ${{ secrets.CTF_BLOG_POST_TYPE_ID }}
+          CTF_SPACE_ID: ${{ secrets.CTF_SPACE_ID }}
+          CTF_CDA_ACCESS_TOKEN: ${{ secrets.CTF_CDA_ACCESS_TOKEN }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_OCEAN_0456D7303 }}
-          CTF_PERSON_ID: ${{ secrets.CTF_PERSON_ID }} ,
-          CTF_BLOG_POST_TYPE_ID: ${{ secrets.CTF_BLOG_POST_TYPE_ID }},
-          CTF_SPACE_ID: ${{ secrets.CTF_SPACE_ID }},
-          CTF_CDA_ACCESS_TOKEN: ${{ secrets.CTF_CDA_ACCESS_TOKEN }},
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
