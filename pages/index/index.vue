@@ -10,7 +10,7 @@
       :space="425"
       :controls-visible="true"
       :display="slidesToShow"
-      :height="495"
+      :height="556"
     >
       <slide v-for="(slide, i) in slides" :key="i" :index="i">
         <Card v-bind="slide" />
@@ -22,7 +22,6 @@
 import { Carousel3d, Slide } from 'vue-carousel-3d';
 import Card from '../../components/Card';
 import bsreact from '../../src/assets/bs-react.jpg';
-import bsvue from '../../src/assets/bs-vue.jpg';
 import wp from '../../src/assets/wordpress.jpg';
 import pixelarium from '../../src/assets/pixlarium.jpg';
 import pthdc from '../../src/assets/pth.jpg';
@@ -40,28 +39,19 @@ export default {
           title: 'Best Secret UI Test',
           tech: 'React + SASS(CSSGrid, Flexbox)',
           description:
-            'Prueba que realice para optar al puesto de FrontEnd en mi actual empresa. Todo el proyecto estámontado Sobre React, en este proyecto uso Hooks y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0.',
+            'Prueba que realice para optar al puesto de FrontEnd para Best Secret. Donde en base a un diseño teníamos que montarlo igual. Todo el proyecto está montado sobre React, en este proyecto uso books y JSX. Ataco a la Google News API. Todo el CSS esta construido con SASS desde 0. Debido a las restricciones de la News API no se puedo motar una version live del proyecto si no es en localhost.',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/BSuiTest',
           urlImg: bsreact,
         },
         {
-          title: 'Crysmrnails',
+          title: 'Cristina Morillo nails',
           tech: 'Wordpress',
           description:
-            'Está ha sido hasta el momento la ultima web que he realizado en Wordpress. A diferencia de la web de Gema en esta el cliente es quien lagestiona, quedando mi labor restringida al mantenimiento del servidor, dominio, HTTPS...',
-          urlDemo: 'https://www.crysmrnails.es/',
+            'Esta ha sido hasta el momento la última web que he realizado en Wordpress.El cliente es quien la gestiona, quedando mi labor restringida al mantenimiento del servidor, dominio, HTTPS... Para hacerla hice una toma de requisitos y un documento de briefing',
+          urlDemo: 'https://www.cristinamorillonails.es/',
           urlCode: '',
           urlImg: wp,
-        },
-        {
-          title: 'New Best Secret UI Test',
-          tech: 'Vue + SASS(CSSGrid, Flexbox)',
-          description:
-            'Esta es una versión renovada del primer test que hice. Esta vez con un diseño más completo y bonito. Uso Vue, SASS para el CSS y la News API de Google. Como la ves anterior,nada de Frameworks CSS',
-          urlDemo: 'http://uitest-vue.pthernandez.es',
-          urlCode: 'https://github.com/TommyHernandez/BSuiTest-vue',
-          urlImg: bsvue,
         },
         {
           title: 'Pixelarium Theme',
@@ -73,13 +63,22 @@ export default {
           urlImg: pixelarium,
         },
         {
-          title: 'Pthernandez.es',
+          title: 'Pthernandez.dev',
           tech: 'Nuxt + SASS(CSSGrid, Flexbox)',
           description:
-            'La web que visitas ahora mismo. Para esta web no he usado ningun Framework CSS. He decido usar Nuxt por qe dá una serie de ventajas frente a Vue solo, Nuxt me da la posibilidad de escalar la web.',
+            'La web que visitas ahora mismo. He decido usar Nuxt por qe da una serie de ventajas frente a Vue solo, Nuxt me da la posibilidad de escalar la web. Y te ofrece varias cosas "out of the box"',
           urlDemo: '',
           urlCode: 'https://github.com/TommyHernandez/pthernandez.website',
           urlImg: pthdc,
+        },
+        {
+          title: 'Arata Hub',
+          tech: 'Wordpress',
+          description:
+            'Este es el proyecto en el que ando ahora liado. Junto con un par de amigos hemos decidido iniciar la aventura de crear un blog e ir publicando contenido relacionado con tecnología. PC, consolas, emuladores, software y novedades del mundo de la tecnología. Ya tenemos contenido y este es solo el primer paso.',
+          urlDemo: 'https://aratahub.net/',
+          urlCode: '',
+          urlImg: wp,
         },
       ],
       slidesToShow: 3,

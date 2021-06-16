@@ -13,13 +13,20 @@
       </div>
     </div>
     <div class="card__actions">
-      <a v-if="urlDemo" :href="urlDemo" target="_blank" class="btn btn--filled">
+      <a
+        v-if="urlDemo"
+        :href="urlDemo"
+        target="_blank"
+        class="btn btn--filled"
+        rel="noreferrer"
+      >
         Live Demo
       </a>
       <a
         v-if="urlCode"
         :href="urlCode"
         target="_blank"
+        rel="noreferrer"
         class="btn btn--outline"
       >
         Ver el código</a

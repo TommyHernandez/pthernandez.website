@@ -43,10 +43,18 @@
         </p>
       </div>
       <div class="network-section">
-        <a href="https://github.com/TommyHernandez">
+        <a
+          href="https://github.com/TommyHernandez"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Github />
         </a>
-        <a href="https://www.linkedin.com/in/pedrothdc/">
+        <a
+          href="https://www.linkedin.com/in/pedrothdc/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Linkedin />
         </a>
       </div>
@@ -56,7 +64,9 @@
     </div>
     <footer>
       <span>
-        Made with <img id="heart" src="../src/assets/heart.svg" /> in Granada
+        Made with
+        <img id="heart" src="../src/assets/heart.svg" alt="Forma de corazón" />
+        in Granada
       </span>
       <span class="cr">{{ year }} Pthernandez</span>
     </footer>
@@ -78,7 +88,7 @@ export default {
   },
   data() {
     return {
-      year: new Date().year,
+      year: new Date().getFullYear(),
     };
   },
 };
@@ -104,6 +114,7 @@ h3 {
   padding: 16px;
   overflow-y: scroll;
   @media (min-width: 1180px) {
+    height: calc(100vh - 110px);
     padding: 24px;
   }
 }
@@ -201,6 +212,7 @@ h2.title {
     height: 41px;
     h2 {
       display: inline;
+      color: variables.$green;
       font-weight: 300;
       font-size: 1.2rem;
     }
