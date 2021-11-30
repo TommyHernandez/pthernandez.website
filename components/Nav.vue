@@ -100,6 +100,7 @@ nav {
     a {
       @include mixins.fontBold;
       display: block;
+      margin: 0 0.7rem;
       text-decoration: none;
       color: variables.$text-white;
       transition: color 0.2s ease-in;
@@ -113,8 +114,8 @@ nav {
         color: variables.$green;
         text-decoration: underline;
       }
-      @media (min-width: 1436px) {
-        margin-right: 32px;
+      &:first-child {
+        margin-left: 0;
       }
     }
   }
