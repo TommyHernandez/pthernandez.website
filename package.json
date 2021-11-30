@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@babel/helper-define-map": "^7.13.12",
+    "@nuxt/content": "^1.15.1",
     "axios": "^0.21.1",
     "contentful": "^8.3.1",
     "nuxt": "^2.15.8",

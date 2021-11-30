@@ -14,7 +14,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Web personal a modo de portfolio del desarrollador web Pedro Hernández, espcialista en desarrollo frontend HTML, CSS  y Javascript.',
+          'Web personal y portfolio del desarrollador web Pedro Hernández, espcialista en desarrollo frontend HTML, CSS  y Javascript.',
       },
     ],
     link: [
@@ -48,7 +48,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxt/content'],
   env: {
     CTF_SPACE_ID: process.env.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
