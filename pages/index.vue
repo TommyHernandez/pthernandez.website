@@ -34,12 +34,12 @@
           &gt;
         </span>
         <p>
-          Llevo 5 años dedicandome al desarrollo. Soy un apasionado de la
-          tecnología que ha tenido la oportunidad de ir creciendo en cada una de
-          las empresas por las que ha pasado. He podido trabajar para clientes
-          muy variados y he realizado labores variadas dentro del mundo del
-          desarrollo. Me gusta el código limpio y facil de seguir y por supuesto
-          seguro.
+          Llevo 5 años dedicandome al desarrollo web. Soy un apasionado de la
+          tecnología que ha tenido la oportunidad de ir creciendo y mejorando en
+          cada una de las empresas por las que ha pasado. He podido trabajar
+          para clientes muy variados y realizando diferente labores dentro del
+          mundo del desarrollo. Me gusta el código limpio, fácil de seguir y por
+          supuesto seguro.
         </p>
       </div>
       <div class="network-section">
@@ -141,12 +141,12 @@ footer {
       'info-column nav'
       'info-column content'
       'footer footer';
-    grid-template-columns: 400px auto;
+    grid-template-columns: 325px auto;
     grid-template-rows: 60px auto 50px;
     overflow: hidden;
   }
   @media (min-width: 1800px) {
-    grid-template-columns: 400px auto;
+    grid-template-columns: 350px auto;
   }
 }
 .title {

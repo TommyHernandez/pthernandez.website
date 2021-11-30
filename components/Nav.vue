@@ -86,7 +86,6 @@ nav {
     transition: all ease-in-out 0.4s;
     @media (min-width: 568px) {
       display: flex;
-      justify-content: space-around;
       align-items: center;
       height: 60px;
       margin: 0;

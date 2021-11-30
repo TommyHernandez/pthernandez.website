@@ -34,15 +34,16 @@
         <p>
           Soy Frontend developer en Granada, desde pequeño me ha apasionado la
           tecnología. Por eso soy desarrollador web desde hace más de 5 años. He
-          trabajado para clientes que van desde librerías de barrio pequeñas
-          franquicias hasta Ministerios e importantes marcas de automoción.
+          trabajado para clientes que van desde librerías de barrio, pequeñas
+          franquicias hasta ministerios e importantes marcas de automoción.
         </p>
         <p>
           Durante mis años de experiencia he desarrollado tanto backend(PHP,
           NodeJS, Msql...) como frontend( React, Vuex ,JQuery… ) siendo esta mi
-          actual rama donde mis conocimientos son más profundos. He llevado
-          equipo de desarrollo y he sido tutor y formador de alumnos en
-          prácticas.
+          actual rama donde mis conocimientos son más amplios y me siento más
+          cómodo. Tengo experiencia organizando proyectos y liderando equipos,
+          también he sido tutor y formador de alumnos en prácticas. Actualmente
+          soy Frontend lead.
         </p>
       </div>
       <div class="about__skills">
