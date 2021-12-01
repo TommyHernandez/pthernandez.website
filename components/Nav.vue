@@ -12,6 +12,7 @@
         <nuxt-link to="/libros-recomendados" tabindex="2"
           >Libros recomendados</nuxt-link
         >
+        <nuxt-link to="/blog" tabindex="3">Blog</nuxt-link>
       </div>
     </div>
   </nav>

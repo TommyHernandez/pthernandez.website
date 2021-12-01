@@ -2,5 +2,7 @@
   "semi": true,
   "arrowParens": "always",
   "singleQuote": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "bracketSameLine": true,
+  "proseWrap":"never"
 }

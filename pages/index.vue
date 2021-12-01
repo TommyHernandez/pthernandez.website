@@ -7,8 +7,7 @@
           src="../src/assets/me.jpg"
           alt="A Fantastic photo of me"
           title="Just me ;)"
-          class="avatar"
-        />
+          class="avatar" />
       </div>
       <div class="description">
         <h1 class="title">Pedro Tomás Hernández</h1>
@@ -27,8 +26,7 @@
               'Nuxt',
               'Web developer',
             ]"
-            cursor-char="/"
-          >
+            cursor-char="/">
             <h2 class="typing"></h2>
           </vue-typed-js>
           &gt;
@@ -46,15 +44,13 @@
         <a
           href="https://github.com/TommyHernandez"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           <Github />
         </a>
         <a
           href="https://www.linkedin.com/in/pedrothdc/"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           <Linkedin />
         </a>
       </div>
