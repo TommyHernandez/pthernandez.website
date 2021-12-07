@@ -42,5 +42,6 @@
     "vue-cli-plugin-vuetify": "~2.4.0",
     "vue-jest": "^4.0.0-0",
     "webpack": "^5.36.0"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
