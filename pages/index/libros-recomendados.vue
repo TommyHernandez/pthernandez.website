@@ -13,8 +13,7 @@
         :description="book.description"
         :url-img="book.bookImage.url"
         :author="book.autor"
-        :language="book.idioma"
-      />
+        :language="book.idioma" />
     </div>
   </section>
 </template>

@@ -58,7 +58,7 @@
     <div class="content-area">
       <nuxt-child />
     </div>
-    <footer>
+    <footer class="web-footer">
       <span>
         Made with
         <img id="heart" src="../src/assets/heart.svg" alt="Forma de corazón" />
@@ -114,7 +114,7 @@ h3 {
     padding: 24px;
   }
 }
-footer {
+.web-footer {
   grid-area: footer;
   width: 100vw;
 }
@@ -222,7 +222,7 @@ h2.title {
 .page-leave-to {
   opacity: 0;
 }
-footer {
+.web-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -1,7 +1,12 @@
 ---
+published: true
 title: Articulo de Pruebas :D
 description: "😉💪🏼⏰"
-published: true
+image: '/images/code.jpg'
+date: '2021-12-01'
+topic: cms
+tags:
+- cms
 ---
 
 ##Articulo de prueba compadre
