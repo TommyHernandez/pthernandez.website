@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <h1 class="my-8 max-w-full m-auto text-3xl text-center font-medium">
-      {{ post.title }}
-    </h1>
-    <h3 class="py-4 text-center uppercase">{{ post.description }}</h3>
-    <nuxt-content :document="post" class="leading-loose" />
-  </div>
+  <section class="article">
+    <div class="article__topbar">
+      <nuxt-link to="/blog"> Volver </nuxt-link>
+    </div>
+    <article>
+      <h1>
+        {{ post.title }}
+      </h1>
+      <nuxt-content :document="post" class="article__content" />
+    </article>
+  </section>
 </template>
 <script>
 export default {
@@ -22,3 +26,14 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.article {
+  &__content {
+    max-width: 850px;
+    margin: 0 auto;
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+</style>

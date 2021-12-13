@@ -254,4 +254,42 @@ h2.title {
     }
   }
 }
+/*General styles*/
+.btn {
+  display: inline-block;
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 8px;
+  width: 150px;
+  color: variables.$darkPurple;
+  &:after {
+    content: '';
+    display: block;
+    height: 6px;
+    position: absolute;
+    background: variables.$green;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  &:hover {
+    &:after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+  }
+  &.btn--filled {
+    background: variables.$greenDarker;
+    color: variables.$text-white;
+  }
+  &.btn--outline {
+    border: 2px solid variables.$greenDarker;
+    color: variables.$text-black;
+    line-height: 34px;
+  }
+}
 </style>
