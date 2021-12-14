@@ -1022,6 +1022,25 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@iconify/icons-fluent@^1.1.33":
+  version "1.1.33"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-fluent/-/icons-fluent-1.1.33.tgz#2dcc1616ba94026015b89afacde2c304d4b0d89c"
+  integrity sha512-85U9CYQWIKalY/SCLezWw6xj0X82bT8RYTCrlJoUPrYZpvJTsEKopARil1jCmEofhCNgPyyrczDH4EQRxWdotg==
+
+"@iconify/vue2@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/vue2/-/vue2-1.1.1.tgz#1e7f180f8e1cf6d33f7800d2df64a0629699f8b4"
+  integrity sha512-f89O5c+V2ghA+LCpFFQ8W8nGb4szrJ33vmPVoKSCtctzL2ujSkx+1rWTx12PnWeIKAQRWh+Ajc5Tn/vu5GptSA==
+  dependencies:
+    cross-fetch "^3.1.4"
+
+"@iconify/vue@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/vue/-/vue-3.1.1.tgz#3516b320680756cc9c38b49438af5a315619dca9"
+  integrity sha512-lpRis4y8XHx0LQG1pbD71BuDlYKzCG3xKNsTs6svajQQe1DgkBbt1PEERnJTnmo9UzihTR0Bq7OwPQt7zR25RQ==
+  dependencies:
+    cross-fetch "^3.1.4"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -3963,6 +3982,13 @@ create-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
+cross-fetch@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
+  integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -8027,6 +8053,11 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-fetch@^2.6.1:
   version "2.6.6"
