@@ -40,6 +40,6 @@
     "sass-loader": "^10.0.1",
     "vue-cli-plugin-vuetify": "~2.4.0",
     "vue-jest": "^4.0.0-0",
-    "webpack": "^5.36.0"
+    "webpack": "^5.76.0"
   }
 }
